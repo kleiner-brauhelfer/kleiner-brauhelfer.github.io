@@ -110,7 +110,7 @@ Erg&auml;nzungen, Korrekturen, Verbesserungen oder Bemerkungen sind willkommen â
 
 <h3>Anteile der Stammw&uuml;rze</h3>
 <p>
-Die Stammw&uuml;rze besteht aus verschiedenen Anteile. Die Anteile aus den weiteren Zutaten werden wie folgt berechnet
+Die Stammw&uuml;rze besteht aus verschiedenen Anteilen. Die Anteile aus den weiteren Zutaten werden wie folgt berechnet
 $$ sw_{ZutatenMaischen} = \sum_{ZutatenMaischen} Ausbeute \cdot Menge $$
 $$ sw_{ZutatenKochen} = \sum_{ZutatenKochen} Ausbeute \cdot Menge $$
 $$ sw_{ZutatenGaerung} = \sum_{ZutatenGaerung} Ausbeute \cdot Menge $$
@@ -225,7 +225,7 @@ Damit ergibt sich die Malzmenge, um die gew&uuml;nschte Stammw&uuml;rze zu errei
 $$ m_{Malz} = \frac{sw_{Malz} \cdot m_{Ziel}}{SHA} \label{eq:Schuettung} $$
 </p>
 <p>
-<strong>Bemerkung:</strong> Die Art des Malzes wird nicht unterschieden. Die Berechnung geht davon aus, dass das Extraktpotential bei allem Malzen gleich ist.
+<strong>Bemerkung:</strong> Die Art des Malzes wird nicht unterschieden. Die Berechnung geht davon aus, dass das Extraktpotential bei allen Malzen gleich ist.
 Hier besteht Verbesserungspotenzial.
 </p>
 
@@ -237,7 +237,7 @@ Der Hauptguss ist direkt proportional zu einem frei w&auml;hlbaren Faktor
 $$ V_{Hauptguss} = f_{Hauptguss} \cdot m_{Malz} $$
 </p>
 <p>
-Eine Faktorempfehlung beruht auf diese Berechnung
+Eine Faktorempfehlung beruht auf dieser Berechnung
 $$ f_{HauptgussEmpfohlen} = \begin{cases} 4.0 - \frac{ebc}{50} & \text{wenn } ebc &lt; 50 \\ 3.0 & \text{sonst} \end{cases} $$
 </p>
 <h4>Nachguss</h4>
@@ -329,7 +329,7 @@ $$ SHA_{Effektiv} = \frac{\left(sw_{Anstellen} - sw_{ZutatenMaischen} - sw_{Zuta
 
 <h3>Hopfenausbeute</h3>
 <p>
-Die Ausbeute einer Hopfengabe wird mit der, von Glenn Tinseth empirisch ermittelte Formel, berechnet
+Die Ausbeute einer Hopfengabe wird mit der, von Glenn Tinseth empirisch ermittelten Formel, berechnet
 $$ Ausbeute_{Tinseth}(t,sw) = 1.65 \cdot 0.000125^{0.004 \cdot sw} \cdot \frac{1 - e^{-0.04 \cdot t}}{4.15} $$
 </p>
 <p>
@@ -473,7 +473,7 @@ $$ p(co2, T) = \frac{co2}{10 \cdot e^{-10.73797+\frac{2617.25}{T+273.15}}} - 1.0
 
 <h4>Spundungsdruck</h4>
 <p>
-Das ist der ben&ouml;tigte Druck, um das gew&uuml;nschte Kohlens&auml;uregehalt zu erreichen
+Das ist der ben&ouml;tigte Druck, um den gew&uuml;nschten Kohlens&auml;uregehalt zu erreichen
 $$ p_{Spundung} = p(co2_{Rezept}, T) $$
 </p>
 
@@ -490,7 +490,7 @@ $$ co2_{JungbierGebunden}(t) = co2(0,T) $$
 <p>
 Ist das Jungbier noch nicht endvergoren, entsteht daraus noch weiteres CO2 \eqref{eq:co2_vergaerung}
 $$ co2_{JungbierRestvergaerung} = co2_{Vergaerung}(tre_{Jungbier},tre_{Schnellgaerprobe}) $$
-Wird keine Schnellg&auml;rprobe durchgef&uuml;hrt, so wird davon ausgegangen, dass das Jungbier endvergoren ist und keine weiteres CO2 daraus entsteht.
+Wird keine Schnellg&auml;rprobe durchgef&uuml;hrt, so wird davon ausgegangen, dass das Jungbier endvergoren ist und kein weiteres CO2 daraus entsteht.
 </p>
 <p>
 Aus der Verg&auml;rung der Speise entsteht schlie&szlig;lich folgender CO2 Gehalt \eqref{eq:co2_vergaerung}
@@ -524,7 +524,7 @@ $$ tre_{Gruenschlauchzeitpunkt} = \frac{co2_{Rezept} - co2_{JungbierGebunden}}{0
 
 <h3>Verg&auml;rungsgrad</h3>
 <p>
-Der verg&auml;rungsgrad berechnet sich wie folgt
+Der Verg&auml;rungsgrad berechnet sich wie folgt
 $$ vg = \left(1 - \frac{tre}{sw}\right) \cdot 100 $$
 </p>
 

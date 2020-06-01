@@ -93,7 +93,7 @@ Es erhebt keinen Anspruch auf Richtigkeit und Vollst&auml;ndigkeit.
 <p>
 Erg&auml;nzungen, Korrekturen, Verbesserungen oder Bemerkungen sind willkommen – am liebsten mit Quellenangaben (<a href="mailto:bourgeoislab@gmail.com">bourgeoislab@gmail.com</a>).
 </p>
-<p><strong>Letzte &Auml;nderung:</strong> <em>11.05.2020</em></p>
+<p><strong>Letzte &Auml;nderung:</strong> <em>01.06.2020</em></p>
 
 <h2>Inhaltsverzeichnis</h2>
 <div id='toc'></div>
@@ -165,6 +165,10 @@ V_{Kochbeginn} &= V_{Ziel} \cdot \frac{f_{Verdampfung}}{f_{HighGravity}} \\
 \end{align} $$
 </p>
 <p>
+Durch Umformen kann die Zielmenge bei Kochbeginn auch so formuliert werden
+$$ V_{Kochbeginn} = V_{Kochende} + V_{Verdampfung} = \frac{V_{Ziel}}{f_{HighGravity}} + \frac{Verdampfungsrate \cdot t_{Kochdauer}}{60} $$
+</p>
+<p>
 Die Zielmenge bei Kochende ber&uuml;cksichtigt nur noch den High Gravity Faktor \eqref{eq:f_HighGravity}.
 $$ V_{Kochende} = \frac{V_{Ziel}}{f_{HighGravity}} $$
 </p>
@@ -233,12 +237,16 @@ Hier besteht Verbesserungspotenzial.
 
 <h4>Hauptguss</h4>
 <p>
-Der Hauptguss ist direkt proportional zu einem frei w&auml;hlbaren Faktor
+Der (empfohlene) Hauptguss ist direkt proportional zu einem frei w&auml;hlbaren Faktor
 $$ V_{Hauptguss} = f_{Hauptguss} \cdot m_{Malz} $$
 </p>
 <p>
-Eine Faktorempfehlung beruht auf dieser Berechnung
-$$ f_{HauptgussEmpfohlen} = \begin{cases} 4.0 - \frac{ebc}{50} & \text{wenn } ebc &lt; 50 \\ 3.0 & \text{sonst} \end{cases} $$
+Die Faktorempfehlung entspricht dabei
+$$ f_{Hauptguss,Empfohlen} = \begin{cases} 4.0 - \frac{ebc}{50} & \text{wenn } ebc &lt; 50 \\ 3.0 & \text{sonst} \end{cases} $$
+</p>
+<p>
+Werden im Maischplan Einmaisch- oder Infusionsschritte eingefügt, so setzt sich der Hauptguss aus den einzelnen Mengen Zusammen
+$$ V_{Hauptguss} = V_{Einmaischen} + \sum  V_{Wasserinfusion} $$
 </p>
 <h4>Nachguss</h4>
 <p>
@@ -252,16 +260,6 @@ $$  V_{Treberwasser} = 0.96 \cdot m_{Malz} $$
 Dabei wird angenommen, dass 50kg Malzschrot 60kg Na&szlig;treber mit 80% Wassergehalt ergeben.
 </p>
 <p><strong>Quelle:</strong> <a href="http://www.bierbrauerei.net/Technikum/bierbrauerei-net_kleinsudberechnungen.pdf">Die Bierbrauerei.net</a></p>
-<h4>Grainfather G30</h4>
-<p>
-Der Grainfather G30 empfiehlt eine andere Mengenberechnung
-$$ V_{Hauptguss} = 2.7 \cdot m_{Malz} + 3.5 $$
-$$ V_{Nachguss} = \begin{cases}
-V_{Kochbeginn} + 0.8 \cdot m_{Malz} - V_{Hauptguss} + V_{KorrekturNachguss} & \text{wenn } m_{Malz} &gt; 4.5 \\
-V_{Kochbeginn} + 0.8 \cdot m_{Malz} - 2 - V_{Hauptguss} + V_{KorrekturNachguss} & \text{sonst}
-\end{cases} $$
-</p>
-<p><strong>Quelle:</strong> <a href="https://grainfather.com/wp-content/uploads/2019/09/V7_G30_GERMAN.pdf">Grainfather</a></p>
 <h4>Wasserverschneidung</h4>
 <p>
 Die Ausgangsformel für einen Mischkreuz, damit eine Zielstammw&uuml;rze erreicht wird, lautet
@@ -276,12 +274,39 @@ $$ V_{Wasser} = V_{Wuerze} \cdot \left(\frac{sw_{Ist}}{sw_{Ziel}} - 1\right) \la
 <p>
 Wird mit High Gravity gebraut, kann mit \eqref{eq:wasserverschneidung} die Wassermenge berechnet werden, um auf die Zielstammw&uuml;rze zu kommen.
 $$ \begin{align}
-V_{HighGravity} &= V_{Kochende} \cdot \left(\frac{sw_{Kochende}}{sw_{Anstellen}} - 1\right) \\
-&= V_{Kochende} \cdot \left(\frac{sw_{Anstellen} \cdot f_{HighGravity}}{sw_{Anstellen}} - 1\right) \nonumber \\
-&= V_{Kochende} \cdot f_{HighGravity} - V_{Kochende} \nonumber \\
-&= V_{Ziel} - V_{Kochende} \nonumber
+V_{HighGravity} &= V_{Kochende} \cdot \left(\frac{sw_{Kochende}}{sw_{Anstellen}} - 1\right)
+= V_{Kochende} \cdot \left(\frac{sw_{Anstellen} \cdot f_{HighGravity}}{sw_{Anstellen}} - 1\right) \nonumber \\
+&= V_{Kochende} \cdot f_{HighGravity} - V_{Kochende} \nonumber = V_{Ziel} - V_{Kochende} \nonumber \\
+&= V_{Ziel} - \frac{V_{Ziel}}{f_{HighGravity}} = V_{Ziel} \cdot \left( 1 - \frac{1}{f_{HighGravity}} \right) \nonumber
 \end{align} $$
 </p>
+<h4>Gesamte Wassermenge</h4>
+<p>
+Die gesamte (voraussichtlich) ben&ouml;tigte Wassermenge ergibt sich aus den Einzelkomponenten
+$$ \begin{align}
+V_{Gesamt} &= V_{Hauptguss} +  V_{Nachguss} + V_{HighGravity} \\
+&= \left( V_{Hauptguss} \right) + \left( V_{Kochbeginn} + V_{Treberwasser} - V_{Hauptguss} + V_{KorrekturNachguss} \right) + \left( V_{Ziel} - V_{Kochende} \right) \nonumber \\
+&= V_{Kochbeginn} + V_{Treberwasser} + V_{KorrekturNachguss} +  V_{Ziel} - V_{Kochende} \nonumber \\
+&= V_{Kochende} + V_{Verdampfung} + V_{Treberwasser} + V_{KorrekturNachguss} +  V_{Ziel} - V_{Kochende} \nonumber \\
+&= V_{Ziel} + V_{Verdampfung} + V_{Treberwasser} + V_{KorrekturNachguss}
+\end{align} $$
+Die Gesamtwassermenge ist also unabh&auml;ngig von der High Gravity.
+</p>
+<h4>Grainfather G30</h4>
+<p>
+$$ V_{Hauptguss} = 2.7 \cdot m_{Malz} + 3.5 $$
+$$ V_{Nachguss} = \begin{cases}
+V_{Kochbeginn} + 0.8 \cdot m_{Malz} - V_{Hauptguss} + V_{KorrekturNachguss} & \text{wenn } m_{Malz} &gt; 4.5 \\
+V_{Kochbeginn} + 0.8 \cdot m_{Malz} - 2 - V_{Hauptguss} + V_{KorrekturNachguss} & \text{sonst}
+\end{cases} $$
+</p>
+<p><strong>Quelle:</strong> <a href="https://grainfather.com/wp-content/uploads/2019/09/V7_G30_GERMAN.pdf">Grainfather</a></p>
+<h4>Klarstein Brauheld Pro</h4>
+<p>
+$$ V_{Hauptguss} = 2.7 \cdot m_{Malz} + 3.2 $$
+$$ V_{Nachguss} = V_{Kochbeginn} + 0.8 \cdot m_{Malz} - V_{Hauptguss} + V_{KorrekturNachguss}  $$
+</p>
+<p><strong>Quelle:</strong> <em>User aus Hobbybrauer.de</em></p>
 
 <h3>Einmaischtemperatur</h3>
 <p>
@@ -953,7 +978,7 @@ Danach wird die Dichteverteilung f&uuml;r die tats&auml;chliche Temperatur ermit
 Also sozusagen eine horizontale Linie bei der tats&auml;chlichen Temperatur.
 </p>
 <p>
-Schlie&szlig;lich die tats&auml;chliche Dichte berechnet (Interpolation) und der entsprechende Plato Wert ausgegeben.
+Schlie&szlig;lich wird die tats&auml;chliche Dichte berechnet (Interpolation) und der entsprechende Plato Wert ausgegeben.
 </p>
 <p>
 Beispiel:

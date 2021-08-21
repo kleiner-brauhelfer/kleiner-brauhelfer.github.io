@@ -2,3 +2,5 @@ title: kleiner-brauhelfer
 logo: logo.svg
 theme: just-the-docs
 search_enabled: true
+plugins:
+  - jekyll-seo-tag

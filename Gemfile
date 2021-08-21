@@ -31,5 +31,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # WEBrick for local http server
 gem "webrick", "~> 1.7"
 
+# metadata tags for search engine
+gem 'jekyll-seo-tag'
+
 # just-the-docs
 gem "just-the-docs"

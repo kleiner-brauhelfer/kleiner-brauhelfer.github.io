@@ -5,3 +5,7 @@ search_enabled: true
 
 plugins:
   - jekyll-seo-tag
+
+collections:
+  collections_dir: collections
+  tab_braudaten:

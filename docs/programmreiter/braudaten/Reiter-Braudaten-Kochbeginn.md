@@ -1,8 +1,14 @@
 ---
-name: Kochbeginn
-screenshot: assets/images/just-the-docs.png
+layout: page
+title: Kochbeginn
+parent: Braudaten
+grand_parent: Programmreiter
 order: 2
+nav_order: 2
 ---
+
+1. TOC
+{:toc}
 
 # Kapitel Kochbeginn
 

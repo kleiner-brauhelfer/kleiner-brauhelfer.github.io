@@ -1,7 +1,10 @@
 ---
-name: Anstellen
-screenshot: assets/images/just-the-docs.png
 order: 4
+layout: page
+title: Anstellen
+parent: Braudaten
+grand_parent: Programmreiter
+nav_order: 4
 ---
 
 # Kapitel Anstellen

@@ -6,6 +6,8 @@ search_enabled: true
 plugins:
   - jekyll-seo-tag
 
+collections_dir: all_collections
 collections:
-  collections_dir: collections
-  tab_braudaten:
+  faqs:
+    sort_by: created
+    output: true

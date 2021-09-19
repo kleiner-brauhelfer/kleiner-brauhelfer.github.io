@@ -1,6 +1,9 @@
 ---
-name: Sonstiges
-screenshot: assets/images/just-the-docs.png
+title: Sonstiges
+layout: page
+parent: Braudaten
+grand_parent: Programmreiter
+nav_order: 5
 order: 5
 ---
 

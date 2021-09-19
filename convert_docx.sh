@@ -6,8 +6,10 @@ if [[ -z $1 ]]; then
     echo
     echo "Aufruf: $0 FILE"
     echo
-    echo "Die Eingabedatei wird nur aus dem Standardordner '_pandoc/input' gelesen und nach der Umwandlung gelöscht. Der Output wird nach '_pandoc/output' geschrieben."
+    echo "Die Eingabedatei wird nur aus dem Standardordner '_pandoc/input' gelesen. Der Output wird nach '_pandoc/output' geschrieben."
 fi
+
+#TODO: Loop über alle Dateien in 'input' statt Parameterübergabe
 
 INPUT="${1}"
 OUTPUT="$(echo ${1} | rev | cut -d'.' -f2 | rev).md"

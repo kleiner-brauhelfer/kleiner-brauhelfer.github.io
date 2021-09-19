@@ -1,6 +1,9 @@
 ---
-name: Kochende
-screenshot: assets/images/just-the-docs.png
+title: Kochende
+layout: page
+parent: Braudaten
+grand_parent: Programmreiter
+nav_order: 3
 order: 3
 ---
 

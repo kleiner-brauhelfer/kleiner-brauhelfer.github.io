@@ -1,3 +1,6 @@
+---
+---
+
 function addListeners() {
     var toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
     if (toggleDarkMode){
@@ -13,15 +16,25 @@ function addListeners() {
     }
 }
 
+
 function setThemes() {
-    var theme = '';
-    var theme_size = sessionStorage.getItem('theme_size');
-    var theme_color = sessionStorage.getItem('theme_color');
-    if (theme_size == 'big'){
-        theme = (theme_color) ? 'big_' + theme_color : 'big_light';
-    }else{
-        theme = (theme_color) ? theme_color : 'light';
+    var theme_color = sessionStorage.getItem('theme');
+    if (theme_color == 'dark') {
+        console.info("Setting Theme", theme_color);
+        // Color and Hide light Theme and future unstyled Elements
+        document.body.style.backgroundColor = '#27262b';
+        var content = document.querySelectorAll('body > *');
+        for (let index = 0; index < content.length; index++) {
+            content[index].style.cssText = content[index].style.cssText + 'visibility: hidden;';
+        }
+        // set Theme
+        jtd.setTheme(theme_color);
+        // unhide Elements and reset Color to defaults
+        setTimeout(function(){
+            for (let index = 0; index < content.length; index++) {
+                content[index].style.cssText = content[index].style.cssText.replaceAll('visibility: hidden;', '');
+            }
+            document.body.style.backgroundColor = '';
+        }, 400); // aprox. time until new CSS has been fetched/loaded
     }
-    console.info("Setting Theme", theme);
-    jtd.setTheme(theme);
 }

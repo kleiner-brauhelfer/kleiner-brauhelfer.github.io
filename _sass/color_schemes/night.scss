@@ -1,0 +1,23 @@
+@import "./colors";
+@import "./big.scss";
+
+// Settings (customized from 'dark')
+
+$body-background-color: $grey-dk-300;
+$sidebar-color: $grey-dk-300;
+$border-color: $color-light;
+
+$body-text-color: $grey-lt-300;
+$body-heading-color: $grey-lt-000;
+$nav-child-link-color: $box-mid;//$grey-dk-000;
+$search-result-preview-color: $grey-lt-100;
+
+$link-color: $box-mid;
+$btn-primary-color: $box-strong;
+$base-button-color: $grey-dk-250;
+
+$code-background-color: $grey-dk-250;
+$search-background-color: $grey-dk-250;
+//$table-background-color: $grey-dk-250;
+$table-background-color: $color-light;
+$feedback-color: darken($sidebar-color, 3%);

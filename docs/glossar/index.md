@@ -6,6 +6,8 @@ nav_exclude: true
 has_toc: false
 ---
 
+# Glossar
+
 Der Glossar bietet teilweise Begriffserklärungen und/oder Synonyme.
 
 Nutze die Suchfunktion um diese Inhalte aufzurufen.

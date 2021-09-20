@@ -5,6 +5,8 @@ nav_order: 2
 has_children: true
 ---
 
+# Installation
+
 ### Platzhalter
 
 Der kleine-brauhelfer wurde für mehrere Betriebssysteme kompiliert und ist für Windows, MacOS und Linux verfügbar.

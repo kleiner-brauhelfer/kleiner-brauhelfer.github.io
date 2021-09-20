@@ -6,6 +6,8 @@ search_enabled: true
 plugins:
   - jekyll-seo-tag
 
+color_scheme : dark
+
 collections_dir: all_collections
 collections:
   faqs:

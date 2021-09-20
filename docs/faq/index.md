@@ -5,6 +5,8 @@ nav_order: 11
 has_children: false
 ---
 
+# Frequently asked Questions
+
 TODO: Aufklappfunktion für FAQ Fragen
 
 <ul>
@@ -20,7 +22,7 @@ TODO: Aufklappfunktion für FAQ Fragen
 {% assign id = question.title | replace: " ", "-" | downcase  %}
 
 <h2 id='{{id}}'>
-    <button class='btn text-delta float-left mr-2' onclick='javascript:console.log("Auf!")'>+</button>
+    <button class='btn text-delta float-right ml-2' onclick='javascript:console.log("Auf!")'>+</button>
     {{ question.title }}
 </h2>
 

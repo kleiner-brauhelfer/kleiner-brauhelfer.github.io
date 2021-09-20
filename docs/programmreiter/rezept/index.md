@@ -7,4 +7,6 @@ screenshot: assets/images/just-the-docs.png
 has_children: true
 ---
 
+# Rezept
+
 Screenshot des Tabs

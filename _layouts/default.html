@@ -6,7 +6,7 @@ layout: table_wrappers
 
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
-<body>
+<body class="light-choice">
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="svg-link" viewBox="0 0 24 24">
       <title>Link</title>
@@ -65,8 +65,28 @@ layout: table_wrappers
         {% include nav.html pages=site.html_pages %}
       {% endif %}
     </nav>
+    <!-- Theme Switcher -->
+    <div class="site-nav" id="theme-switch-container">
+      <div class="w3-container w3-center w3-cell-row">
+      <div class="w3-container w3-cell theme-switcher active" data-theme="light">
+        <p>
+          <img src="{{ '/assets/images/sun.svg' | absolute_url }}" class="hide-dark">
+          <img src="{{ '/assets/images/sun_dark.svg' | absolute_url }}" class="hide-light">
+        </p>
+          <div class="dot-mark">&nbsp;</div>
+      </div>
+      <div class="w3-container w3-cell theme-switcher" data-theme="night">
+        <p>
+          <img src="{{ '/assets/images/moon.svg' | absolute_url }}" class="hide-dark">
+          <img src="{{ '/assets/images/moon_dark.svg' | absolute_url }}" class="hide-light">
+        </p>
+        <div class="dot-mark">&nbsp;</div>
+      </div>
+      </div>
+    </div>
+    <!-- / Theme Switcher -->
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+      A modified <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a> theme for Jekyll by <a href="https://github.com/Pitastic">Pitastic</a>.
     </footer>
   </div>
   <div class="main" id="top">

@@ -1,18 +1,17 @@
 ---
 ---
 
-//-> Theme Test Button (unused)
+// Bind EventListeners
 function addListeners() {
-    var toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-    if (toggleDarkMode){
-        jtd.addEvent(toggleDarkMode, 'click', function() {
-            if (jtd.getTheme() === 'dark') {
-                jtd.setTheme('light');
-                toggleDarkMode.textContent = 'Preview dark color scheme';
-            } else {
-                jtd.setTheme('dark');
-                toggleDarkMode.textContent = 'Return to the light side';
-            }
+    // Theme Switcher
+    var themeSwitches = document.querySelectorAll('.theme-switcher');
+    for (let index = 0; index < themeSwitches.length; index++) {
+        jtd.addEvent(themeSwitches[index], 'click', function() {
+            // Set Preferences, mark Dot, load Theme
+            var theme = this.dataset.theme;
+            sessionStorage.setItem('theme', theme);
+            this.classList.add('active');
+            setThemes();
         });
     }
 }
@@ -20,8 +19,20 @@ function addListeners() {
 // Theme Setter (after Pageload)
 function setThemes() {
     var theme_color = sessionStorage.getItem('theme');
+    // deactovate all Markers
+    var marker = document.querySelectorAll('.theme-switcher');
+    for (let inner_idx = 0; inner_idx < marker.length; inner_idx++) {
+        if (marker[inner_idx].dataset.theme == theme_color){
+            marker[inner_idx].classList.add('active');
+        }else{
+            marker[inner_idx].classList.remove('active');
+        }
+    }
     if (theme_color == 'dark' || theme_color == 'night') {
+        // Mark new Choice
         console.info("Setting Theme", theme_color);
+        document.body.classList.remove('light-choice');
+        document.body.classList.add('dark-choice');
         // Color and Hide light Theme and future unstyled Elements
         document.body.style.backgroundColor = '#27262b';
         var content = document.querySelectorAll('body > *');
@@ -37,5 +48,9 @@ function setThemes() {
             }
             document.body.style.backgroundColor = '';
         }, 400); // aprox. time until new CSS has been fetched/loaded
+    }else{
+        jtd.setTheme(theme_color);
+        document.body.classList.remove('dark-choice');
+        document.body.classList.add('light-choice');
     }
 }

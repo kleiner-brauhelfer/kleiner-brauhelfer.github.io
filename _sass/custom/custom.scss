@@ -1,0 +1,32 @@
+@import "../color_schemes/colors.scss";
+@import "../color_schemes/colors.scss";
+
+.light-choice .hide-light {display: none;}
+.dark-choice .hide-dark {display: none;}
+
+#theme-switch-container {flex: initial;}
+.theme-switcher {
+    cursor: pointer;
+}
+
+.dot-mark {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 24px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: inset 1px 1px 3px 0px black;
+}
+    .dark-choice .dot-mark {
+        border-color: $grey-dk-100;
+        background-color: $grey-dk-200;
+    }
+    .light-choice .dot-mark {
+        border-color: $grey-dk-100;
+        background-color: $area-white;
+    }
+    .theme-switcher.active .dot-mark {background-color: $box-mid;}
+
+.light-choice .footer-text {color: $grey-dk-000;}
+.dark-choice .footer-text {color: $grey-dk-000;}

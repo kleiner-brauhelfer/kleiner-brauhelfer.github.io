@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation unter Linux
+title: ... unter Linux
 parent: Installation
 ---
 

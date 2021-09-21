@@ -1,6 +1,7 @@
 ---
 ---
 
+//-> Theme Test Button (unused)
 function addListeners() {
     var toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
     if (toggleDarkMode){
@@ -16,10 +17,10 @@ function addListeners() {
     }
 }
 
-
+// Theme Setter (after Pageload)
 function setThemes() {
     var theme_color = sessionStorage.getItem('theme');
-    if (theme_color == 'dark') {
+    if (theme_color == 'dark' || theme_color == 'night') {
         console.info("Setting Theme", theme_color);
         // Color and Hide light Theme and future unstyled Elements
         document.body.style.backgroundColor = '#27262b';

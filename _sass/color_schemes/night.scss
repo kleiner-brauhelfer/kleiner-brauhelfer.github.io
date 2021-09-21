@@ -9,15 +9,15 @@ $border-color: $color-light;
 
 $body-text-color: $grey-lt-300;
 $body-heading-color: $grey-lt-000;
-$nav-child-link-color: $box-mid;//$grey-dk-000;
 $search-result-preview-color: $grey-lt-100;
 
+$nav-child-link-color: $box-mid;
 $link-color: $box-mid;
-$btn-primary-color: $box-strong;
-$base-button-color: $grey-dk-250;
 
 $code-background-color: $grey-dk-250;
 $search-background-color: $grey-dk-250;
-//$table-background-color: $grey-dk-250;
 $table-background-color: $color-light;
 $feedback-color: darken($sidebar-color, 3%);
+
+$base-button-color: $grey-dk-200;
+$btn-primary-color: $box-strong;

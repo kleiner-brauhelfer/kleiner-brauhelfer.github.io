@@ -5,8 +5,14 @@ parent: Formelsammlung
 nav_order: 1
 ---
 
+<details markdown="block">
+  <summary>
+    Inhaltsverzeichnis
+  </summary>
+  {: .text-delta }
 1. TOC
 {:toc}
+</details>
 
 ---
 

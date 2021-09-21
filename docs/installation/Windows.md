@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation unter Windows
+title: ... unter Windows
 parent: Installation
 ---
 

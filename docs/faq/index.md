@@ -22,7 +22,8 @@ TODO: Aufklappfunktion für FAQ Fragen
 {% assign id = question.title | replace: " ", "-" | downcase  %}
 
 <h2 id='{{id}}'>
-    <button class='btn text-delta float-right ml-2' onclick='javascript:console.log("Auf!")'>+</button>
+    <!--<button type="button" name="button" class="btn btn-primary text-delta float-right ml-2" onclick='javascript:console.log("Auf!")'> + </button>-->
+    <button type="button" name="button" class="btn text-delta float-right ml-2" onclick='javascript:console.log("Auf!")'> + </button>
     {{ question.title }}
 </h2>
 

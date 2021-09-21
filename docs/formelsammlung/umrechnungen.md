@@ -2,11 +2,17 @@
 layout: page_math
 title: Umrechnungen
 parent: Formelsammlung
-nav_order: 10
+nav_order: 1
 ---
 
+<details markdown="block">
+  <summary>
+    Inhaltsverzeichnis
+  </summary>
+  {: .text-delta }
 1. TOC
 {:toc}
+</details>
 
 ---
 

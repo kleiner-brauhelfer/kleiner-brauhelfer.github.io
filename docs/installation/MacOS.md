@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation unter MacOS
+title: ... unter MacOS
 parent: Installation
 ---
 

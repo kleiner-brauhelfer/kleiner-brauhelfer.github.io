@@ -38,6 +38,9 @@ function initNav() {
   const siteNav = document.getElementById('site-nav');
   const mainHeader = document.getElementById('main-header');
   const menuButton = document.getElementById('menu-button');
+  // Added by Pitastic
+  const themeSwitchContainer = document.getElementById('theme-switch-container');
+
 
   jtd.addEvent(menuButton, 'click', function(e){
     e.preventDefault();
@@ -45,9 +48,11 @@ function initNav() {
     if (menuButton.classList.toggle('nav-open')) {
       siteNav.classList.add('nav-open');
       mainHeader.classList.add('nav-open');
+      themeSwitchContainer.classList.add('nav-open');
     } else {
       siteNav.classList.remove('nav-open');
       mainHeader.classList.remove('nav-open');
+      themeSwitchContainer.classList.remove('nav-open');
     }
   });
 

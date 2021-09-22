@@ -18,7 +18,7 @@ function addListeners() {
 
 // Theme Setter (after Pageload)
 function setThemes() {
-    var theme_color = sessionStorage.getItem('theme');
+    var theme_color = sessionStorage.getItem('theme') || 'light';
     // deactovate all Markers
     var marker = document.querySelectorAll('.theme-switcher');
     for (let inner_idx = 0; inner_idx < marker.length; inner_idx++) {
@@ -53,4 +53,12 @@ function setThemes() {
         document.body.classList.remove('dark-choice');
         document.body.classList.add('light-choice');
     }
+}
+
+// Expand / Collapse following Paragraph
+function toggleParagraph(that) {
+    that.parentNode.classList.toggle('open');
+    var p_id = that.parentNode.id + '_box';
+    p = document.getElementById(p_id);
+    p.classList.toggle('w3-hide');
 }

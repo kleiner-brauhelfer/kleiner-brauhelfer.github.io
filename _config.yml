@@ -1,5 +1,6 @@
 title: kleiner-brauhelfer
-logo: logo.svg
+logo: assets/images/logo.svg
+logo_dark: assets/images/logo_dark.svg
 
 search_enabled: true
 

@@ -1,6 +1,31 @@
 ---
 ---
 
+
+// Slideshow from w3css ---
+var slideIndex = 0;
+
+function carousel() {
+  var i;
+  var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
+  if (!x.length){
+      x = document.querySelectorAll('.mySlides.hide-dark');
+  }
+  if (!x.length){
+      console.info('no Slideshow found');
+      return
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+// ---/ Slideshow from w3css
+
+
 // Bind EventListeners
 function addListeners() {
     // Theme Switcher

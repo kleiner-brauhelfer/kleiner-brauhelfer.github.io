@@ -4,8 +4,9 @@
 
 // Slideshow from w3css ---
 var slideIndex = 0;
+var runningTimeOut = false;
 
-function carousel() {
+function carousel(idx) {
   var i;
   var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
   if (!x.length){
@@ -18,10 +19,18 @@ function carousel() {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  slideIndex++;
+  var dots = document.querySelectorAll('.slide-indicators .dot-mark');
+  for (i = 0; i < x.length; i++) {
+    dots[i].classList.remove('active');
+  }
+  var overlay = document.querySelector('.slideshow-overlay');
+  slideIndex = (idx) ? idx : slideIndex + 1;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
+  dots[slideIndex-1].classList.add('active');
+  overlay.href = x[slideIndex-1].src;
+  if (runningTimeOut) {clearTimeout(runningTimeOut);}
+  runningTimeOut = setTimeout(carousel, 5000);
 }
 // ---/ Slideshow from w3css
 

@@ -83,7 +83,7 @@ layout: table_wrappers
       </div>
     </div>
     <!-- / Theme Switcher -->
-    <footer class="site-footer">
+    <footer class="site-footer footer-text">
       A modified <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a> theme for Jekyll by <a href="https://github.com/Pitastic">Pitastic</a>.
     </footer>
   </div>
@@ -157,7 +157,7 @@ layout: table_wrappers
 
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Inhalt</h2>
+          <p>Inhalt</p>
           <ul>
             {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent -%}
             {% for child in children_list %}

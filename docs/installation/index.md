@@ -13,4 +13,4 @@ Der kleine-brauhelfer wurde für mehrere Betriebssysteme kompiliert und ist für
 
 Der Source Code kann in jedem Release oder auf GitHub angesehen werden.
 
-[Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary}
+[Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary target="_blank"}

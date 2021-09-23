@@ -26,7 +26,8 @@ has_children: true
     {% endfor %}
 </div>
 <div class="w3-center slide-indicators" style="width:100%">
-    {% for i in (0..img_counter) %}
+    {% assign img_counter = img_counter | minus: 1 %}
+    {% for i in (1..img_counter) %}
           <a class="dot-mark" onclick='carousel({{i}})'>&nbsp;</a>
     {% endfor %}
 </div>

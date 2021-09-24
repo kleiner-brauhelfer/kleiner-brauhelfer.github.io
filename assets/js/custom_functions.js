@@ -9,41 +9,44 @@ var controlsHasBeenShowed = false;
 
 // SlideShow (modified w3css Version)
 function carousel(idx) {
-  var i;
-  var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
-  if (!x.length){
-      x = document.querySelectorAll('.mySlides.hide-dark');
-  }
-  if (!x.length){
-      console.info('no Slideshow found');
-      return
-  }
-  // Unset previous
-  for (i = 0; i < x.length; i++) {
+    var i;
+    var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
+    if (!x.length){
+        x = document.querySelectorAll('.mySlides.hide-dark');
+    }
+    if (!x.length){
+        console.info('no Slideshow found');
+        return
+    }
+    // Unset previous
+    for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-  }
-  var dots = document.querySelectorAll('.slide-indicators .dot-mark');
-  for (i = 0; i < x.length; i++) {
+    }
+    var dots = document.querySelectorAll('.slide-indicators .dot-mark');
+    for (i = 0; i < x.length; i++) {
     dots[i].classList.remove('active');
-  }
-  var overlay = document.querySelector('.slideshow-overlay');
-  // Set slideIndex
-  if (idx) {
+    }
+    var overlay = document.querySelector('.slideshow-overlay');
+    // Set slideIndex
+    if (idx) {
     slideIndex = (idx > 0) ? idx : slideIndex - 1;      
-  }else{
+    }else{
     slideIndex++;
-  }
-  if (slideIndex > x.length) {slideIndex = 1}
-  if (slideIndex < 1) {slideIndex = x.length}
-  // Show slideIndex
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].classList.add('active');
-  overlay.href = x[slideIndex-1].src;
-  // Reset Timeout
-  if (runningTimeOut) {clearTimeout(runningTimeOut);}
-  runningTimeOut = setTimeout(carousel, 5000);
-  // Show Controls at first Load
-  if (!controlsHasBeenShowed) {flashControls();}
+    }
+    if (slideIndex > x.length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = x.length}
+    // Show slideIndex
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].classList.add('active');
+    overlay.href = x[slideIndex-1].src;
+    // Reset Timeout
+    if (runningTimeOut) {clearTimeout(runningTimeOut);}
+    runningTimeOut = setTimeout(carousel, 5000);
+    // Show Controls at first Load
+    if (!controlsHasBeenShowed) {
+        flashControls();
+        controlsHasBeenShowed = true;
+    }
 }
 
 

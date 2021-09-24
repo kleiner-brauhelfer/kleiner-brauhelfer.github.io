@@ -76,13 +76,16 @@
         cursor: pointer;
     }
         .slideshow-overlay svg {width: 60px; height: 60px;}
-        .slideshow:hover .slideshow-overlay {
-            display: block;
-            background-color: rgba(140,140,140,0.33);
-        }
-        .slideshow:hover .slideshow-skip {
-            display: block;
-        }
+        .light-choice .slideshow-overlay svg {fill: $grey-dk-100;}
+        .dark-choice .slideshow-overlay svg {fill: $grey-lt-300;}
+
+    .slideshow:hover .slideshow-overlay {
+        display: block;
+        background-color: rgba(140,140,140,0.33);
+    }
+    .slideshow:hover .slideshow-skip {
+        display: block;
+    }
 
     .slide-indicators .dot-mark {margin: 4px;}
     .slide-indicators .dot-mark:first-child {margin-left: 0;}

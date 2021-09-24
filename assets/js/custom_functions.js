@@ -2,10 +2,12 @@
 ---
 
 
-// Slideshow from w3css ---
 var slideIndex = 0;
 var runningTimeOut = false;
+var controlsHasBeenShowed = false;
 
+
+// SlideShow (modified w3css Version)
 function carousel(idx) {
   var i;
   var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
@@ -16,6 +18,7 @@ function carousel(idx) {
       console.info('no Slideshow found');
       return
   }
+  // Unset previous
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -24,6 +27,7 @@ function carousel(idx) {
     dots[i].classList.remove('active');
   }
   var overlay = document.querySelector('.slideshow-overlay');
+  // Set slideIndex
   if (idx) {
     slideIndex = (idx > 0) ? idx : slideIndex - 1;      
   }else{
@@ -31,13 +35,16 @@ function carousel(idx) {
   }
   if (slideIndex > x.length) {slideIndex = 1}
   if (slideIndex < 1) {slideIndex = x.length}
+  // Show slideIndex
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add('active');
   overlay.href = x[slideIndex-1].src;
+  // Reset Timeout
   if (runningTimeOut) {clearTimeout(runningTimeOut);}
   runningTimeOut = setTimeout(carousel, 5000);
+  // Show Controls at first Load
+  if (!controlsHasBeenShowed) {flashControls();}
 }
-// ---/ Slideshow from w3css
 
 
 // Bind EventListeners
@@ -54,6 +61,7 @@ function addListeners() {
         });
     }
 }
+
 
 // Theme Setter (after Pageload)
 function setThemes() {
@@ -81,10 +89,25 @@ function setThemes() {
     document.head.appendChild(css_theme);
 }
 
+
 // Expand / Collapse following Paragraph
 function toggleParagraph(that) {
     that.parentNode.classList.toggle('open');
     var p_id = that.parentNode.id + '_box';
     p = document.getElementById(p_id);
     p.classList.toggle('w3-hide');
+}
+
+
+// Show Slideshow Controls
+function flashControls() {
+    var controls = document.querySelectorAll('.slideshow-skip, .slideshow-overlay');
+    for (let index = 0; index < controls.length; index++) {
+        controls[index].style.display = 'block';
+    }
+    setTimeout(function() {
+        for (let index = 0; index < controls.length; index++) {
+            controls[index].style.display = '';
+        }
+    }, 1500);
 }

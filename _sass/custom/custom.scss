@@ -61,18 +61,30 @@
     }
     .light-choice .mySlides {border-color: $area-white;}
     .dark-choice .mySlides {border-color: $color-light;}
-    .slideshow-overlay {
+    .slideshow-overlay, .slideshow-skip {
         display: none;
         position: absolute;
+    }
+    .slideshow-overlay {
         width: 100%; height: 100%;
         z-index: 10;
     }   
+    .slideshow-skip {
+        padding: 64px 32px;
+        z-index: 11;
+        font-size: $font-size-7;
+        cursor: pointer;
+    }
         .slideshow-overlay svg {width: 60px; height: 60px;}
         .slideshow:hover .slideshow-overlay {
             display: block;
             background-color: rgba(140,140,140,0.33);
         }
-    .slide-indicators .dot-mark {margin: 8px;}
+        .slideshow:hover .slideshow-skip {
+            display: block;
+        }
+
+    .slide-indicators .dot-mark {margin: 4px;}
     .slide-indicators .dot-mark:first-child {margin-left: 0;}
     .slide-indicators .dot-mark:last-child {margin-right: 0;}
 

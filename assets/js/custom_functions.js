@@ -24,8 +24,13 @@ function carousel(idx) {
     dots[i].classList.remove('active');
   }
   var overlay = document.querySelector('.slideshow-overlay');
-  slideIndex = (idx) ? idx : slideIndex + 1;
+  if (idx) {
+    slideIndex = (idx > 0) ? idx : slideIndex - 1;      
+  }else{
+    slideIndex++;
+  }
   if (slideIndex > x.length) {slideIndex = 1}
+  if (slideIndex < 1) {slideIndex = x.length}
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add('active');
   overlay.href = x[slideIndex-1].src;

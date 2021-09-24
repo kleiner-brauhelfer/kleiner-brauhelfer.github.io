@@ -11,6 +11,8 @@ has_children: true
     <a href="" class="slideshow-overlay" target=_blank>
         <svg viewBox="0 0 24 24" class="w3-display-middle"><use xlink:href="#svg-search"></use></svg>
     </a>
+    <a class="w3-display-left slideshow-skip" onclick="carousel(-1);">&#10094;</a>
+    <a class="w3-display-right slideshow-skip" onclick="carousel();">&#10095;</a>
     {% assign img_counter = -1 %}
     {% for image in site.static_files %}
         {% if image.path contains 'assets/images/screenshots' %}

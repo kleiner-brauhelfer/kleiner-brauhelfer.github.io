@@ -1,7 +1,7 @@
 ---
 layout: page
-title: FooFooFoo
+title: Glossar Beispiel
 parent: Glossar
 ---
 
-Conten von FooFooFoo.
+Placeholder für eine Begriffserklärung.

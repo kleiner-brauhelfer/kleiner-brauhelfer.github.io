@@ -7,4 +7,4 @@ parent: Installation
 # Installation unter MacOS
 ## `macos.zip`
 
-Text
+Placeholder

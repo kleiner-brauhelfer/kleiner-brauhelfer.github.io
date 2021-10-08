@@ -8,8 +8,8 @@ parent: Installation
 
 ## `portable_win_x86.zip` und `portable_win_x64.zip`
 
-Text
+Placeholder
 
 ## `setup_win_x86.zip` und `setup_win_x64.zip`
 
-Text
+Placeholder

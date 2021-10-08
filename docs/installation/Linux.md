@@ -8,8 +8,8 @@ parent: Installation
 
 ## `linux_x86.deb` und `linux_x64.deb`
 
-Text
+Placeholder
 
 ## `.AppImage`
 
-Text
+Placeholder

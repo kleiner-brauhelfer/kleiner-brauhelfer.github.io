@@ -1,6 +1,6 @@
 ---
-title: Ich habe Probleme mit dem .deb Paket und Qt5 unter Linux
+title: Installation des .deb Pakets und Qt5 unter Linux
 created: 2021-09-19
 ---
 
-Das kannst du wie folgt installieren...
+(Placeholder) Installationsanleitung für dieses spezielle Problem folgt hier...

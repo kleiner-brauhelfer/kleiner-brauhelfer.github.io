@@ -7,6 +7,8 @@ has_children: true
 
 # Installation
 
+TODO: Placeholder Intro-Image
+
 ### Platzhalter
 
 Der kleine-brauhelfer wurde für mehrere Betriebssysteme kompiliert und ist für Windows, MacOS und Linux verfügbar.

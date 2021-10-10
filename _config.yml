@@ -1,7 +1,16 @@
 title: kleiner-brauhelfer
-logo: logo.svg
+logo: assets/images/logo.svg
+logo_dark: assets/images/logo_dark.svg
 
 search_enabled: true
 
 plugins:
   - jekyll-seo-tag
+
+color_scheme : light
+
+collections_dir: all_collections
+collections:
+  faqs:
+    sort_by: created
+    output: true

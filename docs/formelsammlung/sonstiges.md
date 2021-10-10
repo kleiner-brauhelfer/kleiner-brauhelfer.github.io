@@ -2,11 +2,17 @@
 layout: page_math
 title: Sonstige Berechnungen
 parent: Formelsammlung
-nav_order: 11
+nav_order: 100
 ---
 
+<details markdown="block">
+  <summary>
+    Inhaltsverzeichnis
+  </summary>
+  {: .text-delta }
 1. TOC
 {:toc}
+</details>
 
 ---
 

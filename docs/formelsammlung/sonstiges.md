@@ -5,7 +5,7 @@ parent: Formelsammlung
 nav_order: 100
 ---
 
-<details markdown="block">
+<details open markdown="block">
   <summary>
     Inhaltsverzeichnis
   </summary>

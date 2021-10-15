@@ -7,6 +7,8 @@ has_children: true
 
 # Formelsammlung
 
-TODO: Image?
+TODO: Placeholder Intro-Image
+
+### Platzhalter
 
 Wer einmal nachrechnen möchte (oder muss), der findet hier des Brauers Formelsammlung.

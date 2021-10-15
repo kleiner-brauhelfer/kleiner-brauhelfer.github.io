@@ -1,10 +1,11 @@
 ---
-layout: home
-title: Home
-nav_order: 1
+layout: page
+title: Android App
+nav_order: 6
+has_children: false
 ---
 
-# kleiner-brauhelfer-2
+# Android App
 
 <div class="slideshow w3-display-container">
     <a href="" class="slideshow-overlay" target=_blank>
@@ -14,7 +15,7 @@ nav_order: 1
     <a class="w3-display-right slideshow-skip" onclick="carousel();">&#10095;</a>
     {% assign img_counter = -1 %}
     {% for image in site.static_files %}
-        {% if image.path contains 'assets/images/screenshots' %}
+        {% if image.path contains 'assets/images/screenshots_app' %}
             {% assign img_path = site.baseurl | append: image.path %}
             {% assign img_class = "w3-image w3-animate-left mySlides" %}
             {% if image.path contains '_dark' %}
@@ -33,13 +34,9 @@ nav_order: 1
     {% endfor %}
 </div>
 
-Der kleine-brauhelfer, abgekürzt KBH,  ist ein Hilfsprogramm für Hobbybrauer zum Erstellen und Verwalten von Biersuden.
+Der kleine-brauhelfer für unterwegs? Neben der Desktopanwendung ist der Brauhelfer auch als Android [App](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-app) verfügbar!
 
-Die Version 2 ist die Weiterentwicklung vom [kleinen-brauhelfer](http://github.com/Gremmel/kleiner-brauhelfer).
+Die App wird nicht wie üblich über den App Store vertrieben, sondern muss als apk Datei heruntergeladen werden.
 
-Das Programm ist eine kostenlose Open Source Software und ist für die Betriebssysteme Windows, MacOs und Linux verfügbar.
 
-Dank der Unterstützung der [Hobbybrauer](http://hobbybrauer.de) Community, wurde das Programm auf Englisch,  Schwedisch und Niederländisch übersetzt.
-
-[Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary target="_blank"}
-[Changelog](https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}
+[Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-app/releases/latest){: .btn .btn-primary target="_blank"}

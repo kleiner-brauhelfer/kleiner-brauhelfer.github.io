@@ -12,22 +12,24 @@ nav_order: 1
     </a>
     <a class="w3-display-left slideshow-skip" onclick="carousel(-1);">&#10094;</a>
     <a class="w3-display-right slideshow-skip" onclick="carousel();">&#10095;</a>
-    {% assign img_counter = -1 %}
+    {% assign img_counter = 0 %}
     {% for image in site.static_files %}
         {% if image.path contains 'assets/images/screenshots' %}
             {% assign img_path = site.baseurl | append: image.path %}
             {% assign img_class = "w3-image w3-animate-left mySlides" %}
             {% if image.path contains '_dark' %}
-                    <img src="{{img_path}}" class="{{img_class}} hide-light" alt="image" />
+                <!-- DARK: {{img_path}} -->
+                <img src="{{img_path}}" class="{{img_class}} hide-light" alt="image" />
             {% else %}
-                    <img src="{{img_path}}" class="{{img_class}} hide-dark" alt="image" />
+                <!-- LIGHT {{img_path}} -->
+                <img src="{{img_path}}" class="{{img_class}} hide-dark" alt="image" />
+                {% assign img_counter = img_counter | plus: 1 %}
             {% endif %}
-            {% assign img_counter = img_counter | plus: 1 %}
         {% endif %}
     {% endfor %}
 </div>
+
 <div class="w3-center slide-indicators" style="width:100%">
-    {% assign img_counter = img_counter | minus: 1 %}
     {% for i in (1..img_counter) %}
           <a class="dot-mark" onclick='carousel({{i}})'>&nbsp;</a>
     {% endfor %}

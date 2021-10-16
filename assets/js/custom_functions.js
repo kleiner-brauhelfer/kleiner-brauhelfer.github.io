@@ -10,28 +10,28 @@ var controlsHasBeenShowed = false;
 // SlideShow (modified w3css Version)
 function carousel(idx) {
     var i;
-    var x = document.querySelectorAll('.dark-choice .mySlides.hide-light');
+    var x = document.querySelectorAll('.dark-choice .mySlides.hide-light, .dark-choice .mySlides.hide-none');
     if (!x.length){
-        x = document.querySelectorAll('.mySlides.hide-dark');
+        x = document.querySelectorAll('.mySlides.hide-dark, .mySlides.hide-none');
     }
     if (!x.length){
         console.info('no Slideshow found');
         return
     }
     // Unset previous
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
     var dots = document.querySelectorAll('.slide-indicators .dot-mark');
-    for (i = 0; i < x.length; i++) {
-    dots[i].classList.remove('active');
+    for (var i = 0; i < x.length; i++) {
+        dots[i].classList.remove('active');
     }
     var overlay = document.querySelector('.slideshow-overlay');
     // Set slideIndex
     if (idx) {
-    slideIndex = (idx > 0) ? idx : slideIndex - 1;      
+        slideIndex = (idx > 0) ? idx : slideIndex - 1;      
     }else{
-    slideIndex++;
+        slideIndex++;
     }
     if (slideIndex > x.length) {slideIndex = 1}
     if (slideIndex < 1) {slideIndex = x.length}

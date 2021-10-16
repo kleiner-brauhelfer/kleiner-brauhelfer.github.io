@@ -29,7 +29,7 @@ Der Source Code kann auf [GitHub](http://github.com/kleiner-brauhelfer/kleiner-b
 
 ## Windows
 
-### Installer:
+### Installer
 - kbh2_v2.x.x_setup_win_x64.exe (64bit)
 - kbh2_v2.x.x_setup_win_x86.exe (32bit)
 

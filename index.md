@@ -35,13 +35,13 @@ nav_order: 1
     {% endfor %}
 </div>
 
-Der kleine-brauhelfer, abgekürzt KBH,  ist ein Hilfsprogramm für Hobbybrauer zum Erstellen und Verwalten von Biersuden.
+Der kleine-brauhelfer (abgekürzt KBH) ist ein Hilfsprogramm für Hobbybrauer zum Erstellen und Verwalten von Biersuden.
 
 Die Version 2 ist die Weiterentwicklung vom [kleinen-brauhelfer](http://github.com/Gremmel/kleiner-brauhelfer).
 
-Das Programm ist eine kostenlose Open Source Software und ist für die Betriebssysteme Windows, MacOs und Linux verfügbar.
+Das Programm ist eine kostenlose Open Source Software und für die Betriebssysteme Windows, MacOs und Linux verfügbar.
 
-Dank der Unterstützung der [Hobbybrauer](http://hobbybrauer.de) Community, wurde das Programm auf Englisch,  Schwedisch und Niederländisch übersetzt.
+Dank der Unterstützung der [Hobbybrauer](http://hobbybrauer.de) Community, wurde das Programm auf Englisch, Schwedisch und Niederländisch übersetzt.
 
 [Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary target="_blank"}
 [Changelog](https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}

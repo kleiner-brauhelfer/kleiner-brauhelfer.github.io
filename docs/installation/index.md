@@ -12,7 +12,7 @@ Der kleine-brauhelfer wurde für mehrere Betriebssysteme kompiliert und ist für
 Der Source Code kann auf [GitHub](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2) angesehen werden.
 
 [Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary target="_blank"}
-[Changelog](https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}
+[Changelog](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}
 
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Braudaten
 nav_order: 3
 parent: Programmreiter
-screenshot: assets/images/screenshots/tab3
+screenshot: assets/images/screenshots/02_braudaten
 has_children: true
 ---
 
@@ -18,5 +18,3 @@ has_children: true
 <a href="{{ img_light }}" class="hide-dark" target=_blank>
     <img src="{{ img_light }}" class="{{img_class}}" alt="image" />
 </a>
-
-Einleitungstext...Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.

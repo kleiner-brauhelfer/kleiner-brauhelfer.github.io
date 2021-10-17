@@ -37,3 +37,4 @@ Die App wird nicht wie üblich über den App Store vertrieben, sondern muss als 
 
 
 [Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-app/releases/latest){: .btn .btn-primary target="_blank"}
+[Changelog](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-app/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}

@@ -44,7 +44,7 @@ $$ V_{Kochende} = \frac{V_{Ziel}}{f_{HighGravity}} $$
 
 
 Die Zielmenge beim Anstellen kann nicht genau angegeben werden, da der Zeitpunkt f&uuml;r die Korrekturmenge nicht spezifiziert ist.
-Geht man davon aus, dass die meisten Verluste nach dem Anstellen eintreffen, so gilt
+Geht man davon aus, dass die meisten Verluste vor dem Anstellen entstehen, so gilt
 
 $$ V_{Anstellen} \approx  V_{Ziel} $$
 

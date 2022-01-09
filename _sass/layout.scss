@@ -72,6 +72,7 @@
 }
 
 .site-nav,
+.site-theme-switch,
 .site-header,
 .site-footer {
   width: 100%;
@@ -94,6 +95,18 @@
     padding-bottom: $gutter-spacing-sm;
     overflow-y: auto;
     flex: 1 1 auto;
+  }
+}
+
+.site-theme-switch {
+  display: none;
+
+  &.nav-open {
+    display: block;
+  }
+  @include mq(md) {
+    display: block;
+    padding-top: $sp-4;
   }
 }
 

@@ -44,4 +44,4 @@ Das Programm ist eine kostenlose Open Source Software und für die Betriebssyste
 Dank der Unterstützung der [Hobbybrauer](http://hobbybrauer.de) Community, wurde das Programm auf Englisch, Schwedisch und Niederländisch übersetzt.
 
 [Aktuelle Version herunterladen](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/releases/latest){: .btn .btn-primary target="_blank"}
-[Changelog](https://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}
+[Changelog](http://github.com/kleiner-brauhelfer/kleiner-brauhelfer-2/blob/master/CHANGELOG.md){: .btn .btn-primary target="_blank"}

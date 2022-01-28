@@ -64,9 +64,9 @@ Der Source Code kann auf [GitHub](http://github.com/kleiner-brauhelfer/kleiner-b
 
 
 ### Installation Qt
-Qt kann über den offiziellen [Installer](https://www.qt.io/download-qt-installer) installiert werden (Registrierung nötig). 
+Qt kann über den offiziellen [Installer](http://www.qt.io/download-qt-installer) installiert werden (Registrierung nötig). 
 
-Alternativ kann [Another Qt installer](https://github.com/miurahr/aqtinstall) verwendet werden:
+Alternativ kann [Another Qt installer](http://github.com/miurahr/aqtinstall) verwendet werden:
 ```
 # Configure
 VERSION='5.15.2'
@@ -76,7 +76,7 @@ QT_PATH="/opt/Qt"
 mkdir /tmp/aqt
 cd /tmp/aqt
 
-# Install helper (https://github.com/miurahr/aqtinstall)
+# Install helper (http://github.com/miurahr/aqtinstall)
 sudo pip install aqtinstall
 
 # Install Qt

@@ -2,7 +2,7 @@
 layout: page_math
 title: Wasseraufbereitung
 parent: Formelsammlung
-nav_order: 1
+nav_order: 7
 ---
 
 <details open markdown="block">

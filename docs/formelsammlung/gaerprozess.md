@@ -2,7 +2,7 @@
 layout: page_math
 title: G&auml;rprozess
 parent: Formelsammlung
-nav_order: 1
+nav_order: 6
 ---
 
 <details open markdown="block">
@@ -153,4 +153,8 @@ $$ tre_{Gruenschlauchzeitpunkt} = \frac{co2_{Rezept} - co2_{JungbierGebunden}}{0
 
 Der Verg&auml;rungsgrad berechnet sich wie folgt
 
-$$ vg = \left(1 - \frac{tre}{sw}\right) \cdot 100 $$
+$$ vg = \left(1 - \frac{tre - sw_{unvergärbar}}{sw_{vergärbar} - sw_{unvergärbar}}\right) \cdot 100 $$
+
+Beziehungsweise der scheinbare Restextrakt
+
+$$ tre = \left(sw_{vergärbar} - sw_{unvergärbar} \right) \cdot \left(1 - \frac{vg}{100} \right) + sw_{unvergärbar} $$

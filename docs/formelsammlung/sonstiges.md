@@ -2,7 +2,7 @@
 layout: page_math
 title: Sonstige Berechnungen
 parent: Formelsammlung
-nav_order: 100
+nav_order: 10
 ---
 
 <details open markdown="block">

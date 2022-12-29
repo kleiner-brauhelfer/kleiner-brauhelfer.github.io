@@ -2,7 +2,7 @@
 layout: page_math
 title: Stammw&uuml;rze
 parent: Formelsammlung
-nav_order: 1
+nav_order: 2
 ---
 
 <details open markdown="block">
@@ -17,15 +17,12 @@ nav_order: 1
 ---
 
 # Stammw&uuml;rze
-<table>
-  <tr><td>Stammw&uuml;rze</td><td>\(sw\)</td><td>\([&deg;P]\)</td></tr>
-  <tr><td>Ausbeute</td><td>\(Ausbeute\)</td><td>\([\%]\)</td></tr>
-  <tr><td>Menge pro Liter</td><td>\(Menge\)</td><td>\([(l\:oder\:kg\:oder\:Stk)/l]\)</td></tr>
-</table>
-**Bemerkung:** Bei einer Temperatur von 20&deg;C entspricht 1&deg;P 1g Extrakt in 100g W&uuml;rze. Das entspricht n&auml;herungsweise 10g Extrakt pro Liter.
 
 ## Anteile der Stammw&uuml;rze
-Die Stammw&uuml;rze besteht aus verschiedenen Anteilen. Die Anteile aus den weiteren Zutaten werden wie folgt berechnet
+
+Die Stammw&uuml;rze setzt sich aus den Anteile aus den Malzgaben und den Zus&auml;tzen
+
+$$ sw = sw_{Malz} +  sw_{ZutatenMaischen} + sw_{ZutatenKochen} +  sw_{ZutatenGaerung} $$
 
 $$ sw_{ZutatenMaischen} = \sum_{ZutatenMaischen} Ausbeute \cdot Menge $$
 
@@ -33,34 +30,34 @@ $$ sw_{ZutatenKochen} = \sum_{ZutatenKochen} Ausbeute \cdot Menge $$
 
 $$ sw_{ZutatenGaerung} = \sum_{ZutatenGaerung} Ausbeute \cdot Menge $$
 
-**Bemerkung:** Dies ist eine stark vereinfachte Berechnung. Die Ausbeute muss dabei experimentell ermittelt werden.
-
-Der Anteil aus den Malzgaben ergibt sich aus der Differenz zwischen der gew&uuml;nschten Stammw&uuml;rze und die Anteile aus den weiteren Zutaten.
-
-$$ sw_{Malz} = sw_{Rezept} -  sw_{ZutatenMaischen} - sw_{ZutatenKochen} -  sw_{ZutatenGaerung} $$
+**Bemerkung:** Die Berechnung der Stammw&uuml;rze f&uuml;r die Zus&auml;tzen ist eine stark Vereinfachung. Die Ausbeute muss dabei experimentell ermittelt werden.
 
 ## Zielstammw&uuml;rze
-Die gew&uuml;nschte Stammw&uuml;rze setzt sich aus den einzelnen Anteilen zusammen.
 
-$$ sw_{Rezept} = sw_{Malz} + sw_{ZutatenMaischen} + sw_{ZutatenKochen} +  sw_{ZutatenGaerung} $$
+Zielstammw&uuml;rze bei Kochbeginn
 
-Die Zielstammw&uuml;rze bei Kochbeginn ber&uuml;cksichtigt den Verdampfungseffekt und den High Gravity Faktor ([Einflussfaktoren](einflussfaktoren)).
+$$ sw_{Kochbeginn} = \frac{sw_{Kochende} - sw_{ZutatenKochen}}{f_{Verdampfung}} $$
 
-$$ sw_{Kochbeginn} = \left(sw_{Malz} + sw_{ZutatenMaischen}\right) \cdot \frac{f_{HighGravity}}{f_{Verdampfung}} $$
+$$ sw_{KochbeginnMitZutatenKochen} = \frac{sw_{Kochende}}{f_{Verdampfung}} $$
 
-$$ sw_{KochbeginnMitZutatenKochen} = \left(sw_{Malz} + sw_{ZutatenMaischen} + sw_{ZutatenKochen}\right) \cdot \frac{f_{HighGravity}}{f_{Verdampfung}} $$
+Zielstammw&uuml;rze bei Kochende
 
-Die Zielstammw&uuml;rze bei Kochende ber&uuml;cksichtigt nur noch den High Gravity Faktor ([Einflussfaktoren](einflussfaktoren)).
+$$ sw_{Kochende} = sw_{Anstellen} \cdot f_{HighGravity} $$
 
-$$ \begin{align}
-sw_{Kochende} &= \left(sw_{Malz} + sw_{ZutatenMaischen} + sw_{ZutatenKochen}\right) \cdot f_{HighGravity} \label{eq:sw_Kochende} \\
-              &= \left(sw_{Rezept} - sw_{ZutatenGaerung}\right) \cdot f_{HighGravity} \nonumber \\
-              &= sw_{Anstellen} \cdot f_{HighGravity} \nonumber
-\end{align} $$
+Zielstammw&uuml;rze bei Kochende mit einem Hefestarter
 
-Die Zielstammw&uuml;rze beim Anstellen ist gleich der gew&uuml;nschten Stammw&uuml;rze minus den Anteil aus der G&auml;rung.
+$$ sw_{Kochende} = \frac{V_{Kochende} \cdot \left( sw_{Anstellen} \cdot f_{HighGravity} \right) - V_{Hefestarter} \cdot sw_{Hefestarter}}{V_{Kochende} + V_{Hefestarter}} $$
 
-$$ \begin{align}
-sw_{Anstellen} &= sw_{Malz} + sw_{ZutatenMaischen} + sw_{ZutatenKochen} \\
-               &= sw_{Rezept} - sw_{ZutatenGaerung} \nonumber
-\end{align} $$
+Zielstammw&uuml;rze beim Anstellen
+
+$$ sw_{Anstellen} = sw_{Rezept} - sw_{ZutatenGaerung} $$
+
+## Nebenrechnungen
+
+### High Gravity
+
+$$ f_{HighGravity} = 1 + \frac{f_{HighGravity,\%}}{100} $$
+
+### Verdampfung
+
+$$ f_{Verdampfung} = 1 + \frac{\dot{V}_{Verdampfung} \cdot t_{Kochdauer}}{V_{Kochende}} $$

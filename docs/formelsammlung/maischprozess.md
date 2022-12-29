@@ -2,7 +2,7 @@
 layout: page_math
 title: Maischprozess
 parent: Formelsammlung
-nav_order: 1
+nav_order: 4
 ---
 
 <details open markdown="block">

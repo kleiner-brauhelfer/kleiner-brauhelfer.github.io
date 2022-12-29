@@ -2,7 +2,7 @@
 layout: page_math
 title: W&uuml;rzemenge
 parent: Formelsammlung
-nav_order: 1
+nav_order: 3
 ---
 
 <details open markdown="block">
@@ -17,37 +17,40 @@ nav_order: 1
 ---
 
 # W&uuml;rzemenge
-<table>
-  <tr><td>Volumen</td><td>\(V\)</td><td>\([l]\)</td></tr>
-</table>
+
 
 ## Zielw&uuml;rzemenge
-Die gesamte Zielmenge setzt sich zusammen aus der gew&uuml;nschten Menge und der Korrekturmenge aus den Anlagedaten.
 
-$$ V_{Ziel} = V_{Rezept} + V_{KorrekturMenge} $$
+Diel Zielmenge setzt sich zusammen aus der gew&uuml;nschten Biermenge und der Korrekturmenge aus den Anlagedaten abz&uuml;glich der Hefestartermenge.
 
-Die Zielmenge bei Kochbeginn ber&uuml;cksichtigt den Verdampfungseffekt und den High Gravity Faktor ([Einflussfaktoren](einflussfaktoren)).
+$$ V_{Ziel} = V_{Rezept} - V_{Hefestarter} + V_{KorrekturAnlage} $$
 
-$$ \begin{align}
-V_{Kochbeginn} &= V_{Ziel} \cdot \frac{f_{Verdampfung}}{f_{HighGravity}} \\
-               &= V_{Kochende} \cdot f_{Verdampfung} \nonumber
-\end{align} $$
+Zielmenge bei Kochbeginn
 
-Durch Umformen kann die Zielmenge bei Kochbeginn auch so formuliert werden
+$$ V_{Kochbeginn} = V_{Kochende} + V_{Verdampfung} = \frac{V_{Ziel}}{f_{HighGravity}} + \dot{V}_{Verdampfung} \cdot t_{Kochdauer} $$
 
-$$ V_{Kochbeginn} = V_{Kochende} + V_{Verdampfung} = \frac{V_{Ziel}}{f_{HighGravity}} + \frac{Verdampfungsrate \cdot t_{Kochdauer}}{60} $$
-
-
-Die Zielmenge bei Kochende ber&uuml;cksichtigt nur noch den High Gravity Faktor ([Einflussfaktoren](einflussfaktoren)).
+Zielmenge bei Kochende
 
 $$ V_{Kochende} = \frac{V_{Ziel}}{f_{HighGravity}} $$
-
 
 Die Zielmenge beim Anstellen kann nicht genau angegeben werden, da der Zeitpunkt f&uuml;r die Korrekturmenge nicht spezifiziert ist.
 Geht man davon aus, dass die meisten Verluste vor dem Anstellen entstehen, so gilt
 
 $$ V_{Anstellen} \approx  V_{Ziel} $$
 
-
 **Bemerkung:** Nicht ber&uuml;cksichtigt werden systematische Mengenverluste, wie zum Beispiel der Verlust durch den Hopfentreber.
 Aktuell werden diese Verluste mehrheitlich durch die mittlere Sudhausausbeute aus den Anlagedaten kompensiert.
+
+## Nebenrechnungen
+
+### High Gravity
+
+$$ f_{HighGravity} = 1 + \frac{f_{HighGravity,\%}}{100} $$
+
+$$ V_{HighGravity} = V_{Ziel} - V_{Kochende} = V_{Ziel} \cdot (1 - \frac{1}{f_{HighGravity}}) $$
+
+### Verdampfung
+
+$$ f_{Verdampfung} = 1 + \frac{\dot{V}_{Verdampfung} \cdot t_{Kochdauer}}{V_{Kochende}} $$
+
+$$ V_{Verdampfung} = \dot{V}_{Verdampfung} \cdot t_{Kochdauer} $$

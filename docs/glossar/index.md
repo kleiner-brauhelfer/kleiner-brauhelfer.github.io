@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Glossar
+nav_order: 6
 has_children: true
-nav_exclude: true
 has_toc: false
 ---
 

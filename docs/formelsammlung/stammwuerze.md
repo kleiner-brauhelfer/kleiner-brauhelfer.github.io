@@ -20,19 +20,25 @@ nav_order: 2
 
 ## Anteile der Stammw&uuml;rze
 
-Die Stammw&uuml;rze setzt sich aus den Anteile aus den Malzgaben und den Zus&auml;tzen
+Die Stammw&uuml;rze setzt sich aus den Anteile aus den Malzgaben, den Zus&auml;tzen und den Hefestartert
 
-$$ sw = sw_{Malz} +  sw_{ZutatenMaischen} + sw_{ZutatenKochen} +  sw_{ZutatenGaerung} $$
+$$ sw_{Rezept} = sw_{Malz} +  sw_{ZutatenMaischen} + sw_{ZutatenKochen} +  sw_{ZutatenGaerung} +  sw_{AnteilHefestarter} $$
 
-$$ sw_{ZutatenMaischen} = \sum_{ZutatenMaischen} Ausbeute \cdot Menge $$
+$$ sw_{ZutatenMaischen} = \sum_{ZutatenMaischen} Ausbeute_i \cdot Menge_i $$
 
-$$ sw_{ZutatenKochen} = \sum_{ZutatenKochen} Ausbeute \cdot Menge $$
+$$ sw_{ZutatenKochen} = \sum_{ZutatenKochen} Ausbeute_i \cdot Menge_i $$
 
-$$ sw_{ZutatenGaerung} = \sum_{ZutatenGaerung} Ausbeute \cdot Menge $$
+$$ sw_{ZutatenGaerung} = \sum_{ZutatenGaerung} Ausbeute_i \cdot Menge_i $$
+
+$$ sw_{AnteilHefestarter} = \frac{sw_{Hefestarter} \cdot V_{Hefestarter}}{V_{Anstellen}} $$
 
 **Bemerkung:** Die Berechnung der Stammw&uuml;rze f&uuml;r die Zus&auml;tzen ist eine stark Vereinfachung. Die Ausbeute muss dabei experimentell ermittelt werden.
 
 ## Zielstammw&uuml;rze
+
+Zielstammw&uuml;rze aus den Malzgaben
+
+$$ sw_{Malz} = sw_{Rezept} -  sw_{ZutatenMaischen} + sw_{ZutatenKochen} +  sw_{ZutatenGaerung} +  sw_{AnteilHefestarter} $$
 
 Zielstammw&uuml;rze bei Kochbeginn
 

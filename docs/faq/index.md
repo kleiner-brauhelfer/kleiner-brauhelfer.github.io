@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-nav_order: 11
+nav_order: 5
 has_children: false
 ---
 

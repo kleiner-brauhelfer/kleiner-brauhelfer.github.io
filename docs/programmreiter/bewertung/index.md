@@ -12,6 +12,8 @@ has_children: true
 
 # Bewertung
 
+Der Reiter Bewertung ist ein Standardmodul, das an professionelle  Verkostungsbögen angelehnt ist und zusätzlichen Platz für ein Resümee des Bierprozesses und zum Feedback durch Freunde und Mittrinker bietet.
+
 <a href="{{ img_dark }}" class="hide-light" target=_blank>
     <img src="{{ img_dark }}" class="{{img_class}}" alt="image" />
 </a>

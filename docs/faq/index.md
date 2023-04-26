@@ -5,7 +5,7 @@ nav_order: 5
 has_children: false
 ---
 
-# Frequently asked Questions
+# Frequently Asked Questions
 
 <ul>
 {% for question in site.faqs %}

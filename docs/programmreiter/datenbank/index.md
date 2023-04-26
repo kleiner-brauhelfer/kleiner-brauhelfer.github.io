@@ -12,6 +12,8 @@ has_children: true
 
 # Datenbank
 
+Die Datenbank erlaubt einen Blick unter die Haube des Kleinen Brauhelfers 2. Dieser Blick ist unter normalen Umständen nicht nötig, er kann aber bei Problemen Abhilfe schaffen.
+
 <a href="{{ img_dark }}" class="hide-light" target=_blank>
     <img src="{{ img_dark }}" class="{{img_class}}" alt="image" />
 </a>

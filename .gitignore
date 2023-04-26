@@ -10,3 +10,4 @@ Gemfile
 _config.yml
 _convert/INPUT/*
 _convert/OUTPUT/*
+.DS_Store

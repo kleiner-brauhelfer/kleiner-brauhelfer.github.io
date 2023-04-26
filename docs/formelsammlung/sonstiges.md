@@ -103,7 +103,7 @@ dichteverteilung(T_{gemessen}) &=
 plato_{wirklich} &= interpolation(dichteverteilung(T_{gemessen}), dichte(plato_{gmessen}, T_{geeicht})) = 12.7 \nonumber
 \end{align} $$
 
-Die Interpolation erfolgt jeweils mit einer Lagrangeinterpolation mit k=3.
+Die Interpolation erfolgt jeweils mit einer Lagrange-Interpolation mit k=3.
 
 
 ## Mischungstemperatur
@@ -116,7 +116,7 @@ Die Interpolation erfolgt jeweils mit einer Lagrangeinterpolation mit k=3.
 </table>
 **Quelle:** [Wikipedia](http://de.wikipedia.org/wiki/Richmannsche_Mischungsregel)
 
-Je nach gew&uuml;nschter Gr&ouml;&szlig;e kann eine dieser Formel verwendet werden
+Je nach gew&uuml;nschter Gr&ouml;&szlig;e kann eine dieser Formeln verwendet werden
 
 $$ T_m = \frac{m_1 \cdot c_1 \cdot T_1 + m_2 \cdot c_2 \cdot T_2}{m_1 \cdot c_1 + m_2 \cdot c_2} \label{eq:mischungstemperatur_tm} $$
 

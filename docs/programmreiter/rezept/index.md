@@ -12,6 +12,8 @@ has_children: true
 
 # Rezept
 
+Der Reiter Rezept ist die zentrale Instanz für selbst angelegte und importierte Rezepte. Er ist Grundlage für manche spannenden Momenten im weiteren Brauprozess: Erreiche ich die Werte vom Rezept?
+
 <a href="{{ img_dark }}" class="hide-light" target=_blank>
     <img src="{{ img_dark }}" class="{{img_class}}" alt="image" />
 </a>

@@ -12,6 +12,8 @@ has_children: true
 
 # Sudauswahl
 
+Der Reiter Sudauswahl ist ein mächtiges Werkzeug zur Analyse aller Rezepte und des Rohstofflagers. Er eignet sich hervorragend für die Sudplanung und Lagerhaltung und steht vor allem mit den Reitern Rezept, Abfülldaten und Rohstoffe in Beziehung.
+
 <a href="{{ img_dark }}" class="hide-light" target=_blank>
     <img src="{{ img_dark }}" class="{{img_class}}" alt="image" />
 </a>

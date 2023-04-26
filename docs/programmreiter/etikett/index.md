@@ -12,6 +12,8 @@ has_children: true
 
 # Etikett
 
+Der Reiter Etikett ist ein optionales Modul. Um ihn zu nutzen, muss er vorher im Menü Einstellungen => Module aktiviert werden. Hierauf erscheint ein neuer Reiter, mit dem schnell einfache Banderolen erstellt werden können.
+
 <a href="{{ img_dark }}" class="hide-light" target=_blank>
     <img src="{{ img_dark }}" class="{{img_class}}" alt="image" />
 </a>

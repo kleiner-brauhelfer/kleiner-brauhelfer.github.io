@@ -28,59 +28,38 @@ Der Source Code kann auf [GitHub](http://github.com/kleiner-brauhelfer/kleiner-b
 ---
 
 ## Windows
-
-### Installer
-- kbh2_v2.x.x_setup_win_x64.exe (64bit)
-- kbh2_v2.x.x_setup_win_x86.exe (32bit)
-
-### Portable Version
-- kbh2_v2.x.x_portable_win_x64.zip (64bit)
-- kbh2_v2.x.x_portable_win_x86.zip (32bit)
+- **kbh2_v2.x.x_setup_win_x64.exe**: Installationsdatei für 64bit System
+- **kbh2_v2.x.x_portable_win_x64.zip**: Portable Version für 64bit System
 
 ---
 
 ## MacOS
-- kbh2_v2.x.x_macos.zip
+- **kbh2_v2.x.x_macos.zip**: Installationsdatei für Mac OS
 
 ---
 
-## Linux (Ubuntu/Debian)
+## Linux
+- **kbh2_v2.x.x_linux_x64.deb**: Debian Packet für 64bit System
+  - Benötigt zusätzlich:
+    - [Qt 6](https://www.qt.io/download-qt-installer) inklusiv Qt WebEngine, Qt WebChannel und Qt Positioning
+    - OpenSSL 1.1.1b oder höher
+- **kleiner-brauhelfer-2-x86_64.AppImage**: Portable Version (AppImage) für 64bit System
 
-### Debian-Packet:
-- kbh2_v2.x.x_linux_x64.deb (64bit)
-  - Benötigt zusätzlich Qt 5.15.2 mit folgenden Komponenten
-    - Desktop gcc 64-bit, Qt Charts, Qt WebEngine
-  - Benötigt OpenSSL 1.1.1b oder höher
-
-- kbh2_v2.x.x_linux_x32.deb (32bit)
-  - Neuere Qt Versionen werden für Linux 32bit nicht mehr angeboten. Deshalb werden nicht alle Features unterstüzt.
-  - Benötigt zusätzlich Qt 5.5 mit folgenden Komponenten
-    - Desktop gcc und Qt WebEngine
-  - Benötigt OpenSSL 1.1.1b oder höher
-
-
-### AppImage (portabel)
-- kleiner-brauhelfer-2-x86_64.AppImage
-
-
-### Installation Qt
-Qt kann über den offiziellen [Installer](http://www.qt.io/download-qt-installer) installiert werden (Registrierung nötig). 
-
-Alternativ kann [Another Qt installer](http://github.com/miurahr/aqtinstall) verwendet werden:
+Alternativ zum offiziellen [Qt Installer](http://www.qt.io/download-qt-installer) kann Qt mit [Another Qt installer (aqt)](http://github.com/miurahr/aqtinstall) installiert werden:
 ```
 # Configure
-VERSION='5.15.2'
+VERSION='6.5.0'
 QT_PATH="/opt/Qt"
 
 # Location for logs and download files
 mkdir /tmp/aqt
 cd /tmp/aqt
 
-# Install helper (http://github.com/miurahr/aqtinstall)
+# Install helper (https://github.com/miurahr/aqtinstall)
 sudo pip install aqtinstall
 
 # Install Qt
-sudo python3 -m aqt install --outputdir ${QT_PATH} ${VERSION} linux desktop -m qtcharts qtwebengine
+sudo python3 -m aqt install --outputdir ${QT_PATH} ${VERSION} linux desktop -m qtwebengine qtwebchannel qtpositioning
 
 # Set ENV variables
 export PATH=${QT_PATH}/${VERSION}/clang_64/bin/:$PATH

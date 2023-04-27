@@ -19,7 +19,7 @@ Viel Spaß! Gut Sud!
 
 ## Zum Verständnis der Programmoberfläche
 
-Nicht alle Funktionen sind sofort sichtbar. Einige Reiter und Eingabefelder müssen zuerst über Einstellungen -> Module aktiviert werden. Manch andere Eingabefelder erscheinen erst, wenn bestimmte Werte überschritten oder größer Null sind.
+Nicht alle Funktionen sind sofort sichtbar. Einige Reiter und Eingabefelder müssen zuerst über Einstellungen => Module aktiviert werden. Manch andere Eingabefelder erscheinen erst, wenn bestimmte Werte überschritten oder größer Null sind.
 
 Wo es zusätzliche oder ergänzende Reiter, Funktionen und Eingabefelder gibt, werden diese zu Kapitelbeginn namentlich erwähnt und, wenn erforderlich, in Unterkapiteln aufgeführt.
 

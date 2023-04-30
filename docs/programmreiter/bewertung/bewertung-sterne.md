@@ -16,7 +16,7 @@ Im Reiter Bewertung kann der Sud mit Sterne qualifiziert und eine detaillierte V
 
 Für eine Bewertung muss der Sud im **Reiter Abfülldaten** als abgefüllt markiert sein.
 
-Die Sterne-Bewertung wird auch im **Reiter Sudauswahl** und in der Zusammenfassung angezeigt. Im Reiter Sudauswahl werden generell alle Bewertungssterne gemittelt, wobei ein Wert 2,5 als 3, ein Wert 4,5 als 5 aufgerundet wird. Dies ist ein Unterschied zu früheren Versionen, wo jeweils die Bestbewertung herangezogen wurde
+Die Sterne-Bewertung wird auch im **Reiter Sudauswahl** und in der Zusammenfassung angezeigt. Im Reiter Sudauswahl werden generell alle Bewertungssterne gemittelt, wobei ein Wert 2,5 als 3, ein Wert 4,5 als 5 aufgerundet wird. Dies ist ein Unterschied zu früheren Versionen, wo jeweils die Bestbewertung herangezogen wurde.
 
 Mit Klick auf das Plussymbol wird eine neue Bewertung angelegt und das **Sternesymbol** mit zugehörigem Datum und gegebenenfalls der **Reifungswoche** erscheint in der linken Spalte. Die Wochennummer wird anhand des Bewertungsdatums automatisch berechnet. Die Reifezeit wird im Feld **Beginn der Reifung** im **Reiter Abfülldaten** gesetzt.
 

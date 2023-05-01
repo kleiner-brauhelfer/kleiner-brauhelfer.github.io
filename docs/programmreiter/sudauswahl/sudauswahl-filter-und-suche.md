@@ -14,7 +14,7 @@ order: 1
 
 Zwei Buchstaben genügen bereits, um ein Ergebnis anzuzeigen. Die Zahl gebrauter, importierter und vorgemerkter Sude wird im Laufe einer Braukarriere merklich wachsen und damit immer unübersichtlicher werden. Aus diesem Grund verfügt der Kleine Brauhelfer über mächtige Filterfunktionen, deren Zusammenspiel indes der Erklärung bedarf.
 
-Unterschieden wird dabei zwischen Prozessfiltern, die sich an Rezept, Brautag, Reifung und weiteren orientieren und Datumsfiltern, die den Prozessfiltern untergeordnet sind und diese zusätzlich filtern.
+Unterschieden wird dabei zwischen Prozessfiltern, die sich an Rezept, Brautag, Reifung und weiteren Daten orientieren und Datumsfiltern, die den Prozessfiltern untergeordnet sind und diese zusätzlich filtern.
 
 ![image](/assets/images/pictorial/0001_suddatum_web.png)
 

@@ -6,6 +6,7 @@ search_enabled: true
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 color_scheme : light
 
@@ -14,3 +15,6 @@ collections:
   faqs:
     sort_by: created
     output: true
+
+last-modified-at:
+    date-format: "%d.%m.%Y"

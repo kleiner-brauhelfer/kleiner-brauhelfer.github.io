@@ -34,4 +34,4 @@ Der Datumsbereichfilter ist ein Subfilter, der die vorangegangen Filter zusätzl
 
 Das jeweilige Datum kann entweder manuell oder mittels der Helferlein gesetzt werden, die sich hinter dem Dreieck neben dem Datum verbergen.
 
-<span style="color: #f44336">**Achtung:**</span> Ein falsch oder zu eng eingestellter Datumsfilter lässt oft alle Sude verschwinden, auch wenn die Filter _Rezept_, _gebraut_, _abgefüllt_ und _verbraucht gewissenhaft gesetzt wurden. Damit wieder Sude erscheinen, erweitert man den Zeitraum oder hakt den Datumsfilter ab.
+<span style="color: #f44336">**Achtung:**</span> Ein falsch oder zu eng eingestellter Datumsfilter lässt oft alle Sude verschwinden, auch wenn die Filter _Rezept_, _gebraut_, _abgefüllt_ und _verbraucht_ gewissenhaft gesetzt wurden. Damit wieder Sude erscheinen, erweitert man den Zeitraum oder hakt den Datumsfilter ab.

@@ -24,7 +24,7 @@ Zentral ist der Filter _alle_. Wird er aktiviert, überschreibt er alle anderen 
 
 Der Filter Rezept blendet dabei alle _ungebrauten Rezepte_ ohne weitere Markierung ein. Der Filter Rezept berücksichtigt keine gebrauten, abgefüllten oder verbrauchten Sude!
 
-Anders verhält es sich mit den Filtern gebraut, abgefüllt und verbraucht. Der <span style="color: #3978A6">**Filter gebraut**</span> markiert alle noch nicht abgefüllten Sude rot, die noch im **Reiter Abfülldaten** als abgefüllt bestätigt werden müssen. Der <span style="color: #3978A6">**Filter abgefüllt**</span> markiert alle noch nicht verbrauchten Sude grün, die noch im Reiter Abfülldaten als verbraucht bestätigt werden müssen. Der <span style="color: #3978A6">**Filter verbraucht**</span> schließlich ist auf die Bestätigung **Sud verbraucht** im Reiter Abfülldaten angewiesen; er markiert alle verbrauchten Biere grau.
+Anders verhält es sich mit den Filtern _gebraut_, _abgefüllt_ und _verbraucht_. Der <span style="color: #3978A6">**Filter gebraut**</span> markiert alle noch nicht abgefüllten Sude rot, die noch im **Reiter Abfülldaten** als abgefüllt bestätigt werden müssen. Der <span style="color: #3978A6">**Filter abgefüllt**</span> markiert alle noch nicht verbrauchten Sude grün, die noch im Reiter Abfülldaten als verbraucht bestätigt werden müssen. Der <span style="color: #3978A6">**Filter verbraucht**</span> schließlich ist auf die Bestätigung **Sud verbraucht** im Reiter Abfülldaten angewiesen; er markiert alle verbrauchten Biere grau.
 
 Ist der Filter Merkliste aktiviert, färbt dieser alle gebrauten, abgefüllten und verbrauchten Sude blau, sofern ausgewählt. Der Filter Merkliste ist also ein Subfilter der vorhergehenden Filter.
 
@@ -33,3 +33,5 @@ Ist der Filter Merkliste aktiviert, färbt dieser alle gebrauten, abgefüllten u
 Der Datumsbereichfilter ist ein Subfilter, der die vorangegangen Filter zusätzlich eingrenzt. Er wird gerne zu Betrachtung eines Braujahres eingesetzt. Der Datumsbereichsfilter ist sehr sensibel und filtert oft alle Sude weg. Ist dem der Fall, hilft es die anderen Filter zu kontrollieren; insbesondere der _Filter verbraucht_ wird das größte Ergebnis anzeigen.
 
 Das jeweilige Datum kann entweder manuell oder mittels der Helferlein gesetzt werden, die sich hinter dem Dreieck neben dem Datum verbergen.
+
+<span style="color: #f44336">**Achtung:**</span> Ein falsch oder zu eng eingestellter Datumsfilter lässt oft alle Sude verschwinden, auch wenn die Filter _Rezept_, _gebraut_, _abgefüllt_ und _verbraucht gewissenhaft gesetzt wurden. Damit wieder Sude erscheinen, erweitert man den Zeitraum oder hakt den Datumsfilter ab.

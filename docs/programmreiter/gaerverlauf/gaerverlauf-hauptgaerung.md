@@ -29,7 +29,7 @@ Das Importieren von Messreihen selbst kann auch per Drag & Drop erfolgen. Liegen
 | tatsächlicher Endvergärungsgrad tEVG [%] |
 | Bemerkung |
 
-<span style="color: #f44336">**Achtung:**</span> Soll Grüngeschlaucht werden, ist eine Schnellgärprobe unbedingt nötig, da sonst der Grünschlauchzeitpunkt nicht ermittelt werden kann.
+<span style="color: #f44336">**Achtung:**</span> Soll grüngeschlaucht werden, ist eine Schnellgärprobe unbedingt nötig, da sonst der Grünschlauchzeitpunkt nicht ermittelt werden kann.
 
 Wurde keine Schnellgärprobe gemacht, muss das Jungbier endvergoren sein, um die Speise- oder Zuckermenge richtig berechnen zu können. Endvergoren heißt dabei, dass sich der Spindel- oder Refraktometerwert innerhalb von 2 - 3 Tagen nicht mehr verändert.
 

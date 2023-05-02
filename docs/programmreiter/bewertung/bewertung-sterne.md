@@ -22,7 +22,7 @@ Mit Klick auf das Plussymbol wird eine neue Bewertung angelegt und das **Sternes
 
 Sterne werden in der rechten Fensterhälfte gesetzt, erst dann erscheinen sie in der linken. Halbe Sterne sind nicht möglich.
 
-Das Datum einer einmal angelegten Bewertung kann später manuell geändert werden. Dies ist sinnvoll, wenn externe Bewertungsbögen früheren Datums eingefügt werden sollen. Mit Klick auf den Button Heute wird das Bewertungsdatum zum Zeitpunkt übernommen. 
+Das Datum einer einmal angelegten Bewertung kann später manuell geändert werden. Dies ist sinnvoll, wenn externe Bewertungsbögen früheren Datums eingefügt werden sollen. Mit Klick auf den **Button Heute** wird das Bewertungsdatum zum Zeitpunkt übernommen. 
 
 Es können beliebig viele Bewertungen angelegt werden.
 

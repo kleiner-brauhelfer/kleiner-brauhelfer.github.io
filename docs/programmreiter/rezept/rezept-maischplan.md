@@ -192,11 +192,11 @@ Eine besonders beliebte Variante ist Earlsche Kochmaischverfahren. Es ist ein Hy
 
 Das Earlsche Kochmaischverfahren kann im Kleinen Brauhelfer mit einer Mischung aus Aufheizen und Zubrühen dargestellt werden, wobei die Felder für die Rasten für die Darstellung zu Informationen der Schüttungsanteile ergänzt werden.
 
-Zunächst wird die Schüttung in zwei Teile, Malz 1 und Malz 2 geteilt, wobei Malz 1 bis zu 80% der Gesamtschüttung betragen kann. Ebenso wird das Maischwasser in etwa 2 gleich große Teile Guss 1 und Guss 2 im halbiert.
+Zunächst wird die Schüttung in **zwei Teile**, _Malz 1_ und _Malz 2_, geteilt, wobei _Malz 1_ bis zu 80% der Gesamtschüttung betragen kann. Ebenso wird das Maischwasser in etwa 2 gleich große Teile, _Guss 1_ und _Guss 2_ im halbiert.
 
-Nach Maischen des ersten Teil Malz mit dem ersten Teil Maischwasser (**Malz 1 + Guss 2**) und anschließender Verzuckerung, wird diese Maische gekocht. Nun wird durch Vermischen mit dem zweiten Teil Wasser Guss 2 in dem selben Kessel diese Kochmaische auf Einmaischtemperatur heruntergekühlt. Anschließend erfolgt mit dem restlichen Malz 2 die zweite Schüttung, wobei die Gesamtmaische nun endverzuckert und schließlich abgemaischt wird.
+Nach Maischen des ersten Teil Malz mit dem ersten Teil Maischwasser (**Malz 1 + Guss 1**) und anschließender Verzuckerung, wird diese Maische gekocht. Nun wird durch Vermischen mit dem **zweiten Teil Wasser**, _Guss 2_ in dem selben Kessel diese Kochmaische auf Einmaischtemperatur heruntergekühlt. Anschließend erfolgt mit dem restlichen _Malz 2_ die **zweite Schüttung**, wobei die Gesamtmaische nun endverzuckert und schließlich abgemaischt wird.
 
-Zu beachten ist, dass das Verhältnis von Guss 1 zu Malz 1 den Wert von 2,5 des Hauptgussfaktors nicht unterschreitet. Wenn doch, muss die Schüttung reduziert oder der Gussanteil erhöht werden.
+Zu beachten ist, dass das Verhältnis von _Guss 1_ zu _Malz 1_ den Wert von **2,5** des Hauptgussfaktors nicht unterschreitet. Wenn doch, muss die Schüttung reduziert oder der Gussanteil erhöht werden.
 
 Der typische Maischplan nach Earl Scheid ist folgend aufgebaut:
 
